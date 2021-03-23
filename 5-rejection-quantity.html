@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>REAL TIME DATA MONITORING SYSTEM</title>
+    <style type="text/css">
+        #exTab2 h3 {
+            color: white;
+            background-color: #428bca;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="height: 100%;padding: 0 200px 0 200px;">
+        <div class="row" style="position: relative; margin-top: 100px">
+            <div class="col-4 d-flex flex-column text-start">
+                <div class="justify-content-center" style="margin-left:-15px;">
+                    <img src="images/logo.png" height="32px" alt="bonding" />
+                </div>
+
+                <div class="saira text-white"> <a href="./main-menu.html" class="text-decoration-none text-white">
+                        Bonding</a> >
+                    Rejection quantity</div>
+                <div class="fs-1 text-uppercase text-white saira">REJECTION QUANTITY
+                </div>
+                <!-- Search -->
+                <div class="text-white d-flex flex-column saira">
+                    <div class="fs-2 d-flex align-items-center fw-bold text-uppercase"><i
+                            class="bi bi-search me-2"></i>Search</div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="text-white text-uppercase">
+                                <td>Model</td>
+                                <td>: STA370TOP</td>
+                            </tr>
+                            <tr class="text-white text-uppercase">
+                                <td>Line</td>
+                                <td>: A3</td>
+                            </tr>
+                            <tr class="text-white text-uppercase">
+                                <td>Date Start</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span>: 04-MAR-20 </span>
+                                        <i class="bi bi-calendar-event ms-2"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="text-white text-uppercase">
+                                <td>Date end</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span>: 18-MAR-20 </span>
+                                        <i class="bi bi-calendar-event ms-2"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="text-white text-uppercase">
+                                <td>Shift</td>
+                                <td>
+                                    <div class="d-inline"><span>:</span>
+                                        <select class="form-select d-inline" aria-label="Select shift" class="bg-danger"
+                                            style="background-color: transparent;color:white;border:none;width:50%;background-image: none;">
+                                            <option value="0" selected>Day shift</option>
+                                            <option value="1">Night shift</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Search -->
+                <!-- Master Spec -->
+                <div class="text-white d-flex flex-column saira">
+                    <div class="fs-4 d-flex align-items-center fw-bold text-uppercase text-danger"><i
+                            class="bi bi-pencil-square me-2"></i>Rejection quantity control
+                        <span class="ms-2 text-decoration-underline fs-6">
+                            <a href="#" class="text-white">Edit</a></span>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="text-white text-uppercase">
+                                <td>UCL</td>
+                                <td>: X,XXX</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Master Spec -->
+                <!-- Export -->
+                <div class="text-white d-flex flex-column saira">
+                    <div class="fs-2 d-flex align-items-center fw-bold"><i class="bi bi-save me-2"></i></i>EXPORT DATA
+                    </div>
+                    <table class="table" style="width:50%">
+                        <tbody>
+                            <tr class="text-white text-uppercase">
+                                <td>Excel</td>
+                            </tr>
+                            <tr class="text-white text-uppercase">
+                                <td>Pdf</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Export -->
+            </div>
+            <div class="col d-flex flex-column text-white saira px-1 mb-5">
+
+                <!-- Chart -->
+                <div class="justify-content-center">
+                    <img src="images/graph1.png" height="350px" alt="bonding" />
+                </div>
+                <!-- Chart -->
+
+                <!-- Table for detail data -->
+                <div>
+                    <table class="table table-bordered saira text-white mt-2 text-center table-sm"
+                        style="background-color:#DDDDDE4B;">
+                        <thead class="text-center">
+                            <tr class="align-middle text-uppercase">
+                                <th rowspan="2">Rejection</th>
+                                <th colspan="8">
+                                    STA370TOP A3
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>DATE</th>
+                                <th>TIME</th>
+                                <th>Shift</th>
+                                <th>BDH Rejection (PCS)</th>
+                                <th>MPO Rejection (PCS)</th>
+                                <th>PRD Rejection (PCS)</th>
+                                <th>TOTAL (PCS)</th>
+                                <th>Remark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>04-MAR-20</td>
+                                <td>09:12:08 AM</td>
+                                <td>DAY</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td class="text-danger text-uppercase">out of spec</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>04-MAR-20</td>
+                                <td>09:12:08 AM</td>
+                                <td>DAY</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>04-MAR-20</td>
+                                <td>09:12:08 AM</td>
+                                <td>DAY</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>04-MAR-20</td>
+                                <td>09:12:08 AM</td>
+                                <td>DAY</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td></td>
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- End detail data -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.svc.oneadvanced.com/mosaic-components/components-loader.js"></script>
+</body>
+
+</html>

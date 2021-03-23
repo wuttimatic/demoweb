@@ -1,0 +1,26 @@
+body {
+  background-image: linear-gradient(to right, #4ca590, #0f3491);
+}
+
+.saira {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.sub-menu:hover {
+  margin-left: -30px;
+  cursor: pointer;
+  text-shadow: 0 0 1px #ffffff, 0 0 5px #e1e1e5;
+  font-size: 30px;
+  animation: pulse 0.5s linear;
+  transition: transform 1s ease-in;
+}
+@keyframes pulse {
+  from {
+    transform: translateX(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(1);
+    opacity: 1;
+  }
+}
